@@ -1,0 +1,6 @@
+#build
+docker build -t master_jenkins . 
+
+
+#run
+docker run --name jenkins -p 8080:8080 -v //var/run/docker.sock://var/run/docker.sock master_jenkins
